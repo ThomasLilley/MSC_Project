@@ -16,7 +16,7 @@ import cv2
 import os
 
 # Set number of epochs, learning rate, batch size and image dimensions
-epochs = 2
+epochs = 20
 init_learning = 1e-3
 batch_size = 32
 image_dims = (28, 28, 3)
