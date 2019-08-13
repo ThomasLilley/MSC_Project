@@ -43,8 +43,8 @@ for image_path in image_paths:
 
         kernel = img[j:j+kern, i:i+18]
         outputs[1].append(j)
-        cv2.imshow("k", kernel)
-        cv2.waitKey()
+        #cv2.imshow("k", kernel)
+        #cv2.waitKey()
         # print(np.shape(test))
         # print(len(test))
 
@@ -83,7 +83,7 @@ for image_path in image_paths:
 
     for i in range(0, len(outputs[0])):
 
-        if outputs[3][i] > 75:
+        if outputs[3][i] > 70:
             print("A {}% chance of character {} at x:{} , y:{}".format(str(outputs[3][i]), str(outputs[2][i]),
                                                                        str(outputs[0][i]), str(outputs[1][i])))
 
