@@ -84,6 +84,10 @@ model.compile(loss="binary_crossentropy", optimizer=optimiser, metrics=["accurac
 
 print("begin training...")
 # begin training
+
+# from keras.utils import plot_model
+# plot_model(model, to_file='model.png')
+
 results = model.fit_generator(aug_data.flow(trainX, trainY, batch_size=batch_size), validation_data=(testX, testY),
                               steps_per_epoch=len(trainX) // batch_size, epochs=epochs, verbose=1)
 

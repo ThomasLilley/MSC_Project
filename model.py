@@ -61,3 +61,4 @@ class CNN:
 
         # return the constructed model for use
         return model
+
